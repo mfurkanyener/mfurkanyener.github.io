@@ -1,0 +1,13 @@
+{
+  "name": "anket",
+  "version": "1.0.0",
+  "workspaces": [],
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  }
+}

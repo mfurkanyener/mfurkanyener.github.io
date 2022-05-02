@@ -1,0 +1,136 @@
+body{
+    background-color:rgb(234, 234, 234);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+/*input[type=text]{
+    padding: 10px;
+}*/
+.Container{
+    display: flex;
+    flex-direction: row;
+}
+.Sidebar{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(65,65,65,1) 95%);
+    flex: 1;
+    margin: 20px 0px 60px 5px;
+}
+.Sidebar h1{
+    color: #fff;
+    text-align: center;
+}
+.Sidebar li{
+    color: white;
+    padding: 3%;
+}
+.Sidebar a{
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.Sidebar li:hover{
+    background-color: #737373;
+    border-radius: 10px;
+    margin: 0px 50px 0px 0px;
+}
+.Panel{
+    color: #737373;
+}
+.Menu{
+    margin: 50px;
+}
+.CikisYap{
+    text-align: center;
+    background-color: aqua;
+    margin: 0px 55px 20px 55px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.Homepage{
+    flex: 3;
+}
+/*NAVBAR*/
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:  #f2f2f2;
+    opacity: 0.8;
+    border-radius: 10px;
+    margin: 20px 40px 60px 30px;
+    padding: 0px 25px 0px 25px;
+    align-items: center;
+    position: sticky;
+    top:0;
+}
+.label{
+    font-weight: bold;
+}
+.Left{
+    margin: 0;
+    padding: 0;
+}
+.Right ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.Right a{
+    color: #505050;
+}
+.boxCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 20px 40px 60px 30px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.lrInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 20px 10px 20px;
+}
+.rInfo{
+    text-align: right;
+    font-size: 24px;
+}
+.bInfo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px){
+    .Container{
+        flex-direction: column;
+    }
+    .CikisYap{
+        padding: 5px;
+        margin: 0px 100px 35px 100px;
+    }
+    .Sidebar li{
+        text-align: center;
+    }
+    .Menu li a{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .Sidebar li:hover{
+        margin: 0px 20px 10px 20px;
+    }
+}

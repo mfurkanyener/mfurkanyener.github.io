@@ -1,0 +1,43 @@
+.SignUp{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: #fff;
+    margin: 0px auto;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 15px;
+}
+.Form a{
+    color: rgb(0, 162, 255);
+}
+.Form input[type=text],
+input[type=password],
+input[type=email],
+input[type=date],
+select{
+    padding: 10px;   
+    border-radius: 6px;
+    border: solid 1px rgb(210, 210, 210) 
+}
+.Text{
+    background-color: rgb(0, 162, 255);
+    margin: 20px;
+    border-radius: 6px;
+}
+.Form button{
+    background-color: rgb(0, 162, 255);
+    color: #fff;
+    border-radius: 8px;
+    border: solid 1px rgb(0, 162, 255);
+    padding: 10px;
+}
+.Text h1, p{
+    color: #fff;
+}
