@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(234, 234, 234);
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background: rgb(70, 167, 255);
+    background: linear-gradient(180deg, rgba(70, 167, 255, 1) 0%, rgba(84, 113, 217, 1) 100%);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #bbb, 0px 20px 25px 0px rgb(187, 187, 187);
+    box-shadow: 0px 10px 13px -7px #bbb, 0px 20px 25px 0px rgb(187, 187, 187);
+    transition: box-shadow 0.3s linear;
+}
+
+.CustomRadio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+}
+
+.RadioGender {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.RadioGender span {
+    margin-left: 10px;
+}
+
+
+/* Radio CSS */
+
+.RadioInput {
+    display: none;
+}
+
+.Radio {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Radio::before,
+.Radio::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    display: block;
+    transition: all 0.1s;
+}
+
+.Radio::before {
+    width: 15px;
+    height: 15px;
+    background: rgb(70, 167, 255);
+}
+
+.Radio::after {
+    width: 50px;
+    height: 50px;
+    background: #f2f2f2;
+}
+
+.RadioInput:checked+.Radio::after {
+    animation: ripple 0.2s;
+}
+
+.RadioInput:checked+.Radio::before {
+    transform: scale(1);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(1);
+    }
+}
+
+.SignUpContainer {
+    margin: 3% 37% 0% 37%;
+}
+
+.SignUpBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.SignUpTop {
+    position: relative;
+    top: -60px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px;
+    background: rgb(70, 167, 255);
+    background: linear-gradient(180deg, rgba(70, 167, 255, 1) 0%, rgba(84, 113, 217, 1) 100%);
+}
+
+.SignUpTop a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+}
+
+.SignUpTop h1 {
+    color: #fff;
+}
+
+.SignUpForm {
+    width: 100%;
+}
+
+.SignUpForm a {
+    text-decoration: none;
+    color: #3e61dd;
+    border-bottom: solid 1px #3e61dd;
+}
+
+.SignUpSubmit {
+    margin: 30px 0px 45px 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .SignUpContainer {
+        margin: 15% 0% 0% 0%;
+    }
+}

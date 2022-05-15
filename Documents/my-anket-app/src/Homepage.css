@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(8, 103, 136);
+    background: linear-gradient(0deg, rgba(8, 103, 136, 1) 0%, rgba(7, 160, 195, 1) 100%);
+}
+
+
+/*input[type=submit] {
+    padding: 10px;
+    background-color: #07a0c3;
+    border: none;
+    cursor: pointer;
+}*/
+
+.Body {
+    width: 100%;
+}
+
+.HomepageContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 70px 0px 70px;
+}
+
+.HomepageSurveyPropertyTitle {
+    padding: 20px 0px 20px 25px;
+    color: #fff;
+}
+
+.SurveyImg1 {
+    height: 200px;
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+}
+
+.SurveyImg2 {
+    height: 200px;
+    width: 100%;
+    text-align: end;
+    padding: 0px 20px 0px 0px;
+}
+
+.SurveyProperty1 {
+    width: 100%;
+    padding: 11px 20px 0px 0px;
+    color: #fff;
+}
+
+.SurveyProperty2 {
+    width: 100%;
+    padding: 11px 0px 0px 20px;
+    color: #fff;
+}
+
+.PAnket {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    z-index: 1;
+    background: #fff;
+    color: red;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.PAnketBaslik {
+    position: absolute;
+    z-index: 2;
+    color: #000;
+    margin-left: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+.LastAddedSurvery {
+    background-color: #eae8ff;
+    padding: 15px;
+    border-radius: 15px 0px 0px 15px;
+    margin: 20px 0px 20px 0px;
+}
+
+.LastAddedSurvery:hover {
+    background-color: #ccc;
+}
+
+.HomepageNav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 4;
+}
+
+.SignIn {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.SignIn:hover {
+    background-color: #ccc;
+}
+
+.HomepageNav a {
+    text-decoration: none;
+    color: #eae8ff;
+    font-weight: bold;
+}
+
+.logo h1 {
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Chewy', cursive;
+}
+
+.dropbtn {
+    color: #eae8ff;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Chewy', cursive;
+}
+
+#toggler,
+.HomepageNav label {
+    display: none;
+}
+
+.SurveySearch {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.SearchSurvey {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
+    width: 450px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    background-color: #fff;
+}
+
+.SearchSurvey a {
+    display: flex;
+    text-decoration: none;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #fff;
+    color: #07a0c3;
+    align-items: center;
+    border: solid 2px #000;
+    border-left: none;
+}
+
+.righticon {
+    font-size: 24px;
+}
+
+.SearchSurvey input[type=text] {
+    border: none;
+    border-radius: 30px 0px 0px 30px;
+    width: 250px;
+    border: solid 2px #000;
+    border-right: none;
+}
+
+.SearchSurvey input[type=text]::placeholder {
+    color: #868593;
+    font-size: 16px;
+}
+
+.SurveyBox {
+    width: 100%;
+    margin: 0px 20px 10px 20px;
+}
+
+.HomepageSurveyBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.HomepageSurveyProperty1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.HomepageSurveyProperty2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.HomepageSurveyComment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px 0px 50px 0px;
+    gap: 30px;
+}
+
+.SurveyComment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 4px;
+    margin: 30px 20px 30px 20px;
+}
+
+.SignInTop {
+    position: relative;
+    top: -60px;
+    left: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgb(70, 167, 255);
+    background: linear-gradient(180deg, rgba(70, 167, 255, 1) 0%, rgba(84, 113, 217, 1) 100%);
+}
+
+.SignInTop a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+}
+
+.SignInTop h1 {
+    color: #fff;
+}
+
+.SignInForm {
+    width: 100%;
+    margin-top: -50px;
+}
+
+.speech-bubble {
+    background: #fff;
+    padding: 30px 35px;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #777;
+}
+
+.speech-bubble:after {
+    content: "";
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 4px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    bottom: -20px;
+    right: 50px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    background: rgba(37, 37, 37, 0.823);
+    color: #fff;
+}
+
+.HomepageFooter {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px #07a0c3;
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+.FooterUnderbox {
+    line-height: 30px;
+}
+
+.FooterTitle {
+    line-height: 50px;
+    color: #07a0c3;
+}
+
+.FooterBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterUnderbox a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.FooterBottom {
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+.Copyright span {
+    border-bottom: solid 1px #fff;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .HomepageContainer,
+    .HomepageNav,
+    .SearchSurvey,
+    .HomepageSurveyBox,
+    .HomepageSurveyProperty1,
+    .HomepageSurveyProperty2,
+    .HomepageSurveyComment,
+    .HomepageFooter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .SurveyBox,
+    .SurveyComment {
+        width: 90%;
+    }
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    .HomepageNav label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+}

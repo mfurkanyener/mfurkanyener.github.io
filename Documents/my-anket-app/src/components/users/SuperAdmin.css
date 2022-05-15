@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E6E0D7ff;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.DashboardContainer {
+    display: flex;
+    flex-direction: column;
+    /*background-color: red;*/
+}
+
+.AdminRequest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 100%;
+    margin: 25px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.AdminRequest h2 {
+    padding: 10px 13px;
+    margin: 20px 20px 20px 0px;
+    color: #fff;
+}
+
+.DashboardAsideMenu li a {
+    display: block;
+    color: #fff;
+    padding: 20px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.DashboardAsideMenuButton a {
+    color: #fff;
+}
+
+#AsideToggler,
+.AdminRequest label {
+    display: none;
+}
+
+.DashboardAsideMenuButton {
+    text-align: center;
+    padding: 8px;
+    background-color: #dd1c1a;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    margin: 12px 8px 0px 0px;
+}
+
+.DashboardAsideMenuButton a {
+    color: #fff;
+}
+
+.Baslik {
+    padding: 10px 25px 20px 25px;
+}
+
+.BaslikContainer {
+    background-color: #E6E0D7ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+    position: sticky;
+    top: 25px;
+    z-index: 3;
+    height: 60px;
+}
+
+.TableData {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.TableData:hover {
+    background-color: #c969b9;
+    border-radius: 0px;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.ColumData {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px;
+}
+
+.DataTitle {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    color: #000;
+}
+
+.ButtonData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ButtonData button {
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Onay {
+    background-color: #07a0c3;
+}
+
+.Ret {
+    background-color: #dd1c1a;
+}
+
+.trash,
+.edit {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .DashboardContainer {
+        margin: 1px;
+    }
+}
