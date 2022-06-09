@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(8, 103, 136);
+    background: linear-gradient(0deg, rgba(8, 103, 136, 1) 0%, rgba(7, 160, 195, 1) 100%);
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+input[type=text],
+input[type=date],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+}
+
+button {
+    background: rgb(70, 167, 255);
+    background: linear-gradient(180deg, rgba(70, 167, 255, 1) 0%, rgba(84, 113, 217, 1) 100%);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #bbb, 0px 20px 25px 0px rgb(187, 187, 187);
+    box-shadow: 0px 10px 13px -7px #bbb, 0px 20px 25px 0px rgb(187, 187, 187);
+    transition: box-shadow 0.3s linear;
+}
+
+.DashboardContainer {
+    display: flex;
+    /*background-color: red;*/
+}
+
+.DashboardAside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 22%;
+    height: 600px;
+    position: sticky;
+    top: 10;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(79, 79, 79, 1) 100%);
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.DashboardAside hr {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.DashboardAside h2 {
+    padding: 10px 13px;
+    margin: 25px;
+    color: #fff;
+}
+
+.DashboardAsideMenu li a {
+    display: block;
+    color: #fff;
+    padding: 20px 15px;
+    margin: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+.DashboardAsideMenu li a.active {
+    background-color: #3e61dd;
+}
+
+.DashboardAsideMenu li a:hover:not(.active) {
+    background-color: #808080;
+}
+
+.DashboardAsideMenuButton {
+    text-align: center;
+    padding: 20px;
+    background-color: #3e61dd;
+    margin: 75px 25px 0px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.DashboardAsideMenuButton a {
+    color: #fff;
+}
+
+.DashboardMain {
+    flex: 78%;
+    /*background-color: blue;
+    border-radius: 10px;*/
+    margin: 25px;
+}
+
+.DashboardAside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #E6E0D7ff;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    z-index: 2;
+}
+
+#AsideToggler,
+.DashboardAside label {
+    display: none;
+}
+
+.DashboardNavbar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #E6E0D7ff;
+    padding: 20px;
+    margin: 20px 0px 50px 0px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    z-index: 2;
+}
+
+.DashboardNavbarLogo {
+    margin-right: 50px;
+}
+
+.DashboardNavbarList {
+    display: flex;
+    gap: 30px;
+}
+
+#NavbarToggler,
+.DashboardNavbar label {
+    display: none;
+}
+
+
+/*.DashboardNavbarMenu input[type=text] {
+    font-size: 16px;
+    background-color: #E6E0D7ff;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+}*/
+
+.surveybody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.createsurvey {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.createanswerquestions {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.DashboardFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .DashboardContainer,
+    .DashboardInfo,
+    .DashboardChartContainer,
+    .DashboardMixContainer,
+    .DashboardFooter {
+        flex-direction: column;
+        text-align: center;
+    }
+    .DashboardNavbarMenu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .DashboardNavbarList {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .DashboardNavbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #NavbarToggler:checked~.DashboardNavbarMenu {
+        max-height: 100%;
+    }
+    .DashboardAsideMenu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .DashboardAsideMenuButton {
+        margin: 25px;
+    }
+    .DashboardAside label {
+        display: inline;
+        background-color: #E6E0D7ff;
+        align-items: center;
+        font-size: 36px;
+        cursor: pointer;
+    }
+    #AsideToggler:checked~.DashboardAsideMenu {
+        max-height: 100%;
+    }
+}

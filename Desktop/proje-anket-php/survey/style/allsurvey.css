@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(8, 103, 136);
+    background: linear-gradient(0deg, rgba(8, 103, 136, 1) 0%, rgba(7, 160, 195, 1) 100%);
+}
+
+hr {
+    margin: 0px 40px 0px 40px;
+    border: solid 1px #07a0c3;
+}
+
+input[type="checkbox"],
+[type="radio"] {
+    font: inherit;
+    color: red;
+    width: 24px;
+    height: 24px;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+}
+
+.endsurvey {
+    background: rgb(70, 167, 255);
+    background: linear-gradient(180deg, rgba(70, 167, 255, 1) 0%, rgba(84, 113, 217, 1) 100%);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin: 70px 0px 70px 0px;
+    font-weight: bold;
+}
+
+.endsurvey:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #0066cc, 0px 20px 25px 0px rgb(35, 95, 146);
+    box-shadow: 0px 10px 13px -7px #0066cc, 0px 20px 25px 0px rgb(35, 95, 146);
+    transition: box-shadow 0.3s linear;
+}
+
+.container {
+    width: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 80px 0px 80px;
+    gap: 55px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Chewy', cursive;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #eae8ff;
+    font-weight: bold;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+#toggler,
+.navbar label {
+    display: none;
+}
+
+.login {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.login a {
+    color: #07a0c3;
+}
+
+.login:hover {
+    background-color: #ccc;
+}
+
+.logout {
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.logout a {
+    color: #07a0c3;
+}
+
+.logout:hover {
+    background-color: #ddd;
+}
+
+.dropbtn {
+    color: #eae8ff;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #07a0c3;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Chewy', cursive;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.surveySearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 500px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.surveySearchInput input[type=search] {
+    border: solid 1px #000;
+    border-right: none;
+    width: 230px;
+    padding: 5px;
+    border-radius: 30px 0px 0px 30px;
+    font-size: 16px;
+}
+
+.surveySearchButton input[type=submit] {
+    background-color: #fff;
+    border: solid 1px #000;
+    border-left: none;
+    padding: 5px;
+    border-radius: 0px 30px 30px 0px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgba(37, 37, 37, 0.823);
+}
+
+.footerTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 40px 50px 40px;
+}
+
+.footerBottom {
+    color: #fff;
+    padding: 50px 40px 50px 40px;
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    width: 100%;
+}
+
+.footerBox a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footerBox h3 {
+    color: #07a0c3;
+}
+
+.footerBox h1 {
+    color: #07a0c3;
+}
+
+.footerBottom span {
+    border-bottom: solid 1px #fff;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .body,
+    .login,
+    .surveyBox,
+    .surveyProperty1,
+    .surveyProperty2,
+    .HomepageSurveyComment,
+    .footerTop {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggle:checked~.menu {
+        max-height: 100%;
+    }
+}

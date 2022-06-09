@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(234, 234, 234);
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid 1px #bbb;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background: rgb(70, 167, 255);
+    background: linear-gradient(180deg, rgba(70, 167, 255, 1) 0%, rgba(84, 113, 217, 1) 100%);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #bbb, 0px 20px 25px 0px rgb(187, 187, 187);
+    box-shadow: 0px 10px 13px -7px #bbb, 0px 20px 25px 0px rgb(187, 187, 187);
+    transition: box-shadow 0.3s linear;
+}
+
+.SignInContainer {
+    margin: 10% 37% 0% 37%;
+}
+
+.SignInBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.SignInTop {
+    position: relative;
+    top: -60px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px;
+    background: rgb(70, 167, 255);
+    background: linear-gradient(180deg, rgba(70, 167, 255, 1) 0%, rgba(84, 113, 217, 1) 100%);
+}
+
+.SignInTop a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+}
+
+.SignInTop h1 {
+    color: #fff;
+}
+
+.SignInForm {
+    width: 100%;
+}
+
+.SignInSubmit {
+    margin: 30px 0px 45px 0px;
+}
+
+.SignInForm a {
+    text-decoration: none;
+    color: #3e61dd;
+    border-bottom: solid 1px #3e61dd;
+}
+
+@media screen and (max-width: 768px) {
+    .SignInContainer {
+        margin: 15% 0% 0% 0%;
+    }
+}
